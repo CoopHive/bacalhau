@@ -145,7 +145,7 @@ func (s *BaseScheduler) notifyAskForBid(ctx context.Context, link trace.Link, jo
 		executionID := model.ExecutionID{
 			JobID:       job.Metadata.ID,
 			NodeID:      node.NodeInfo.PeerInfo.ID.String(),
-			ExecutionID: "e-" + uuid.NewString(),
+			ExecutionID: "e-" + job.Metadata.ID + "-" + uuid.NewString(),
 		}
 
 		err := s.jobStore.CreateExecution(ctx, model.ExecutionState{
