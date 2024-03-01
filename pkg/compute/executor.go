@@ -3,7 +3,6 @@ package compute
 import (
 	"context"
 	"fmt"
-	"os"
 
 	"github.com/bacalhau-project/bacalhau/pkg/compute/store"
 	"github.com/bacalhau-project/bacalhau/pkg/executor"
@@ -193,11 +192,11 @@ func (e *BaseExecutor) Publish(ctx context.Context, execution store.Execution) (
 		return
 	}
 
-	log.Ctx(ctx).Debug().Msgf("Cleaning up result folder for %s: %s", execution.ID, resultFolder)
-	err = os.RemoveAll(resultFolder)
-	if err != nil {
-		log.Ctx(ctx).Error().Err(err).Msgf("failed to remove results folder at %s", resultFolder)
-	}
+	// log.Ctx(ctx).Debug().Msgf("Cleaning up result folder for %s: %s", execution.ID, resultFolder)
+	// err = os.RemoveAll(resultFolder)
+	// if err != nil {
+	// 	log.Ctx(ctx).Error().Err(err).Msgf("failed to remove results folder at %s", resultFolder)
+	// }
 
 	e.callback.OnPublishComplete(ctx, PublishResult{
 		ExecutionMetadata: NewExecutionMetadata(execution),
