@@ -38,7 +38,7 @@ require (
 	github.com/invopop/jsonschema v0.7.0
 	github.com/ipfs/go-cid v0.4.1
 	github.com/ipfs/go-ipfs-http-client v0.5.0
-	github.com/ipfs/go-ipld-format v0.4.0
+	github.com/ipfs/go-ipld-format v0.6.0
 	github.com/ipfs/go-libipfs v0.6.2
 	github.com/ipfs/go-log/v2 v2.5.1
 	github.com/ipfs/go-merkledag v0.10.0
@@ -58,7 +58,7 @@ require (
 	github.com/mitchellh/go-wordwrap v1.0.1
 	github.com/multiformats/go-multiaddr v0.9.0
 	github.com/multiformats/go-multicodec v0.8.1
-	github.com/multiformats/go-multihash v0.2.2
+	github.com/multiformats/go-multihash v0.2.3
 	github.com/opencontainers/image-spec v1.1.0
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58
 	github.com/pelletier/go-toml/v2 v2.0.7
@@ -205,7 +205,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/ipfs/bbloom v0.0.4 // indirect
 	github.com/ipfs/go-bitfield v1.1.0 // indirect
-	github.com/ipfs/go-block-format v0.1.1 // indirect
+	github.com/ipfs/go-block-format v0.1.2 // indirect
 	github.com/ipfs/go-blockservice v0.5.0 // indirect
 	github.com/ipfs/go-cidutil v0.1.0 // indirect
 	github.com/ipfs/go-datastore v0.6.0 // indirect
